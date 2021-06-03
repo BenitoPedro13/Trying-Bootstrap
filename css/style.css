@@ -1,3 +1,20 @@
 body {
   padding-top: 76px;
 }
+
+a.lead {
+  text-decoration: none;
+}
+
+a.lead:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 0px;
+  }
+  .fixed-top {
+    position: relative;
+  }
+}
