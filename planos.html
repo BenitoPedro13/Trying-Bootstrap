@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-5.0.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Bootstrap</title>
+</head>
+<body>
+  
+  <!-- Modal --> 
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Entre na Sua Conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="mb-3">
+              <label for="loginSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na Conta
+            </button>
+            <div id="emailHelp" class="form-text">Esqueceu a senha? <a href="#">Clique aqui.</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- -->
+
+  <nav class="navbar navbar-light navbar-expand-md bg-light fixed-top py-3 shadow-sm">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">
+        <img src="./img/caravan.svg" alt="Caravan">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-md-2 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Locais
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="local.html">California</a>
+              <a class="dropdown-item" href="local.html">Paris</a>
+              <a class="dropdown-item" href="local.html">Dublin</a>
+            </div>
+          </li>
+          <li class="nav-item me-md-2">
+            <a href="planos.html" class="nav-link active">
+              Planos
+            </a>
+          </li>
+          <li class="nav-item me-md-2">
+            <a href="contato.html" class="nav-link">
+              Contato
+            </a>
+          </li>
+          <li class="nav-item me-md-2">
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Login
+            </a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a href="inscricao.html" class="btn btn-outline-primary">
+              Inscreva-se
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block">SEU PLANO, SUA VIAGEM</span>
+      <h2 class="display-4 text-primary">Escolha o Plano</h2>
+    </div>
+    <div class="row">
+      <div class="col-md mb-5">
+        <div class="bg-light p-4 rounded shadow">
+          <h2>Gold</h2>
+          <ul class="lista-plano list-unstyled">
+            <li>→ 30 dias de viagem</li>
+            <li>→ 3 destinos diferentes</li>
+            <li>→ Tudo pago pela empresa</li>
+            <li>→ Ingressos para festas</li>
+          </ul>
+          <select class="form-select text-secondary" aria-label="Default select example">
+            <option selected>Selecione a cidade</option>
+            <option value="1">California</option>
+            <option value="2">Paris</option>
+            <option value="3">Dublin</option>
+          </select>
+          <div class="row mt-4 align-items-center">
+            <div class="col">
+              <a href="incricao.html" class="btn btn-lg d-block btn-primary">
+                Comprar Plano
+              </a>
+            </div>
+            <div class="col">
+              <span class="h4">R$5.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md mb-5">
+        <div class="rounded shadow p-4 bg-light">
+          <h2>
+            Platinum
+            <span class="badge bg-success">Novo</span>
+          </h2>
+          <ul class="lista-plano list-unstyled">
+            <li>→ 60 dias de viagem</li>
+            <li>→ 6 destinos diferentes</li>
+            <li>→ Tudo pago pela empresa</li>
+            <li>→ Ingressos para festas</li>
+          </ul>
+          <select class="form-select text-secondary" aria-label="Default select example">
+            <option selected>Selecione a cidade</option>
+            <option value="1">California</option>
+            <option value="2">Paris</option>
+            <option value="3">Dublin</option>
+          </select>
+          <div class="row mt-4 align-items-center">
+            <div class="col">
+              <a href="incricao.html" class="btn btn-lg d-block btn-primary">
+                Comprar Plano
+              </a>
+            </div>
+            <div class="col">
+              <span class="h4">R$7.500</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="inscricao.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">LOCAIS</h4>
+          <ul class="list-unstyled">
+            <li><a href="local.html">California</a></li>
+            <li><a href="local.html">Paris</a></li>
+            <li><a href="local.html">Dublin</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com.br</li>
+            <li>21 99999-9999</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled">
+            <li style="max-width: 140px;" class="">
+              <a href="#" class="btn btn-outline-secondary mb-2 d-block btn-sm">
+                Facebook
+              </a>
+            </li>
+            <li style="max-width: 140px;" class="">
+              <a href="#" class="btn btn-outline-secondary mb-2 d-block btn-sm">
+                Instagram</a>
+              </li>
+            <li style="max-width: 140px;" class="">
+              <a href="#" class="btn btn-outline-secondary mb-2 d-block btn-sm">
+                Youtube
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary py-2 text-center">
+      <p class="mb-0">1REZ3 © 2021. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./bootstrap-5.0.1-dist/js/popper.min.js"></script>
+  <script type="text/javascript" src="./bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
