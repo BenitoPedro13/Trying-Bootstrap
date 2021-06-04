@@ -2,11 +2,11 @@ body {
   padding-top: 76px;
 }
 
-a.lead {
+a.lead, footer a {
   text-decoration: none;
 }
 
-a.lead:hover {
+a.lead:hover, footer .col-4 a:hover {
   text-decoration: underline;
 }
 
