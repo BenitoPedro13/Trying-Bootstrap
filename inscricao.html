@@ -12,34 +12,35 @@
   </head>
   <body>
 
-<!--  Modal   -->
-    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+  <!-- Modal --> 
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Entre na Sua Conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="mb-3">
+              <label for="loginSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na Conta
             </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="loginEmail">Email</label>
-                <input type="email" class="form-control" id="loginEmail">
-              </div>
-              <div class="form-group">
-                <label for="loginSenha">Senha</label>
-                <input type="password" class="form-control" id="loginSenha">
-              </div>
-              <button type="submit" class="btn btn-primary">Entrar na Conta</button>
-              <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
-            </form>
-          </div>
+            <div id="emailHelp" class="form-text">Esqueceu a senha? <a href="#">Clique aqui.</a></div>
+          </form>
         </div>
       </div>
     </div>
-<!-- Fecha Modal  -->
+  </div>
+  
+  <!-- -->
     
     <nav class="navbar navbar-light navbar-expand-md bg-light fixed-top py-3 shadow-sm">
       <div class="container-fluid">
